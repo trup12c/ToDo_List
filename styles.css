@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: wheat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: coral;
+}
+
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 30%; 
+    padding: 30px 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.new_task{
+    position: relative;
+    padding: 30px 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+ #input{
+    position: relative;
+    border-radius: 5px;
+    background: black;
+    height: 45px;
+    width: 70%;
+    padding: 12px;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 15px; 
+}
+
+ #button{
+    position: relative;
+    float: right;
+    height: 45px;
+    width: 20%;
+    border-radius: 20px;
+    background-color: wheat;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Nunito';
+}
+
+ #tasks{
+   background-color: black; 
+   height: 50px;
+   padding: 30px 20px;
+   margin-top: 60px;
+   border-radius: 5px;
+   width: 100%;
+   position: relative; 
+}   
