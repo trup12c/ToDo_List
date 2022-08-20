@@ -59,14 +59,25 @@ h1{
     cursor: pointer;
     font-size: 20px;
     font-family: 'Nunito';
+    transition: all 0.3s ease;
 }
 
- #tasks{
-   background-color: black; 
-   height: 50px;
-   padding: 30px 20px;
-   margin-top: 60px;
-   border-radius: 5px;
-   width: 100%;
-   position: relative; 
-}   
+#button:hover{
+    background-color: coral;
+    color: black;
+}
+
+/* new task styling */
+
+#tasks{
+    background-color: black; 
+    height: 50px;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    width: 100%;
+    position: relative; 
+    list-style: none;
+ }   
+
+ 
