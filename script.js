@@ -16,7 +16,7 @@ button.addEventListener('click', function(event){
         
         // for creating list
         let new_todo = document.createElement('li');
-        new_todo.textContent = 'hey';
+        new_todo.textContent = input.value;
         new_todo.classList.add('todo_item');
         todo_div.appendChild(new_todo);
 
@@ -28,34 +28,31 @@ button.addEventListener('click', function(event){
 
         //check delete button
         let delete_Btn = document.createElement('btn');
-        delete_Btn.textContent = 'delete'; 
+        delete_Btn.textContent = 'Delete';
         delete_Btn.classList.add('delete-Btn'); 
         todo_div.appendChild(delete_Btn);
 
         //append to list
         tasks.appendChild(todo_div);
 
-        console.log('hello');
-
     }
     
 })
 
+document.addEventListener('click', function(event){
+    let task = event.target;
+    if(task.classList[0] === 'delete-Btn'){
+        task.remove();
+    }
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.addEventListener('click', function(event){
+    let task = event.target;
+    if(task.classList[0] === 'completed-Btn'){
+        task.style.textDecoration = 'line-through';
+    }
+})
 
 document.addEventListener('keydown', function(event){
-    console.log(event);
+    //console.log(event);
 })

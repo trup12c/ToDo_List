@@ -56,7 +56,6 @@ h1{
     width: 20%;
     border-radius: 20px;
     background-color: wheat;
-    cursor: pointer;
     font-size: 20px;
     font-family: 'Nunito';
     transition: all 0.3s ease;
@@ -69,15 +68,44 @@ h1{
 
 /* new task styling */
 
-#tasks{
-    background-color: black; 
-    height: 50px;
-    padding: 30px 20px;
-    margin-top: 60px;
-    border-radius: 5px;
-    width: 100%;
-    position: relative; 
+ #tasks{
+    margin-top: 30px;
     list-style: none;
  }   
 
+.todo{
+    margin: 0.5rem;
+    height: 45px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Nunito';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px; 
+    transition: all 0.3s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+ .complete-btn, .delete-btn{
+    padding: 1rem;
+ }
+
+ .completed-btn:hover{
+    color: lightgreen;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+ } 
  
+ .delete-btn:hover{
+    color: coral;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+ }
