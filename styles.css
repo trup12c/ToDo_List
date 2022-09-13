@@ -89,11 +89,13 @@ h1{
 }
 
 .todo li {
+   position: static;
     flex: 1;
 }
 
  .complete-btn, .delete-btn{
     padding: 1rem;
+    display: flex;
  }
 
  .completed-btn:hover{
@@ -108,4 +110,10 @@ h1{
     align-items: center;
     transition: all 0.3s ease;
     cursor: pointer;
+ }
+ 
+ .completed li{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 0.2s ease;
  }

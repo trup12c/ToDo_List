@@ -42,14 +42,15 @@ button.addEventListener('click', function(event){
 document.addEventListener('click', function(event){
     let task = event.target;
     if(task.classList[0] === 'delete-Btn'){
-        task.remove();
+       task.parentNode.remove();
+       //task.remove();
     }
 })
 
 document.addEventListener('click', function(event){
     let task = event.target;
     if(task.classList[0] === 'completed-Btn'){
-        task.style.textDecoration = 'line-through';
+        task.parentNode.classList.toggle('completed');
     }
 })
 
